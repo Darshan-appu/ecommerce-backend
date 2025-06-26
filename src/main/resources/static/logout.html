@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Logging out...</title>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Clear everything related to user login
+      localStorage.removeItem('userToken');
+      localStorage.removeItem('userUsername');
+      localStorage.removeItem('userEmail');
+      localStorage.removeItem('userId');
+      localStorage.removeItem('userRoles');
+      localStorage.removeItem('justLoggedIn');
+
+      // Optional: Clear entire localStorage if nothing else is needed
+        localStorage.clear();
+
+      // Redirect to login page
+      window.location.href = 'login.html';
+    });
+  </script>
+</head>
+<body>
+  <p>Logging out...</p>
+</body>
+</html>
