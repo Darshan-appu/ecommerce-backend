@@ -4,6 +4,9 @@ WORKDIR /app
 
 COPY . .
 
+# ✅ Give execute permission to the Maven wrapper
+RUN chmod +x mvnw
+
 # Build the jar explicitly
 RUN ./mvnw clean package -DskipTests
 
