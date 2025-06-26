@@ -4,6 +4,8 @@ WORKDIR /app
 
 COPY . .
 
-RUN ./mvnw clean install
+# Build the jar explicitly
+RUN ./mvnw clean package -DskipTests
 
-CMD ["java", "-jar", "target/*.jar"]
+# Run the correct jar file
+CMD ["java", "-jar", "target/back-0.0.1-SNAPSHOT.jar"]
