@@ -1,6 +1,6 @@
 // API Configuration
 const API_CONFIG = {
-    BASE_URL: 'https://ecommerce-backend-qqhv.onrender.com/api',
+    BASE_URL: 'https://ecommerce-backend-hoig.onrender.com/api',
     TIMEOUT: 10000
 };
 

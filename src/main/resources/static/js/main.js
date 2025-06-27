@@ -1610,7 +1610,7 @@ document.addEventListener("DOMContentLoaded", function() {
             };
 
             // !!! IMPORTANT: Replace with your actual login API endpoint !!!
-            const API_ENDPOINT = "https://ecommerce-backend-qqhv.onrender.com/api/login"; // Example URL
+            const API_ENDPOINT = "https://ecommerce-backend-hoig.onrender.com/api/login"; // Example URL
 
             try {
                 // Make the API call using fetch
